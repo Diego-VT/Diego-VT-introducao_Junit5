@@ -12,16 +12,16 @@ public class MathUtilTest {
 
     @Test
     public void testMdcAParP1() {
-        final int a = 6;
-        final int b = 3;
-        final int esperado = 3;
+        final int a = 4;
+        final int b = 2;
+        final int esperado = 2;
         final int obtido = MathUtil.mdc(a, b);
         assertEquals(esperado, obtido);
     }
     
     @Test
     void testMdcAImparP1(){
-        final int a = 9;
+        final int a = 6;
         final int b = 3;
         final int esperado = 3;
         final int obtido = MathUtil.mdc(a, b);
@@ -109,6 +109,24 @@ public class MathUtilTest {
        final int obtido = mdc (a,b);
        assertEquals(esperado, obtido);
    }
+   
+    @Test
+    void testMdcOutroBP1(){
+        final int a = 9;
+        final int b = -3;
+        final int esperado = b;
+        final int obtido = MathUtil.mdc(a, b);
+        assertEquals(esperado, obtido);
+    }
+    
+    @Test
+    void testMdcAZeroP1(){
+        final int a = 0;
+        final int b = 1;
+        final int esperado = b;
+        final int obtido = MathUtil.mdc(a, b);
+        assertEquals(esperado, obtido);
+    }
     
     
     
