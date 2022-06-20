@@ -92,8 +92,8 @@ public class MathUtilTest {
     
    @Test
    void testMdcP6(){
-       final int a = 8;
-       final int b = 2;
+       final int a = 18;
+       final int b = 4;
        //mdc(a,b) == mdc(b,a)
        final int esperado = mdc (a,b);
        final int obtido = mdc (b,a);
